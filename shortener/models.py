@@ -12,4 +12,4 @@ class URL(models.Model):
 
     # For 8 characters long custom url, we need a validated user
     # Will implement later
-    user_id = models.CharField(null=True)
+    user_id = models.CharField(null=True, max_length=10)
