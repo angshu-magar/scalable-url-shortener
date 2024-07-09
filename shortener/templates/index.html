@@ -2,11 +2,19 @@
 <html>
     <head>
         {% block head %}
+        <title>URL shortener</title>
         {% endblock head %}
     </head>
     <body>
         {% block body %}
-        <h1>Hello, World!</h1>
+        <h1 align="center">Scalable URL Shortener</h1>
+        <div align="center">
+            <form>
+                {% csrf_token %}
+                <input type="text" placeholder="Long URL"><br><br>
+                <input type="button" value="Shorten">
+            </form>
+        </div>
         {% endblock body %}
     </body>
 </html>

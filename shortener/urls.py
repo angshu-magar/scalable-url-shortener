@@ -19,4 +19,6 @@ from shortener import views
 
 urlpatterns = [
     path('', views.index_view, name='home'),
+    path('urls/', views.url_list),
+    path('urls/<int:pk>/', views.url_detail),
 ]
